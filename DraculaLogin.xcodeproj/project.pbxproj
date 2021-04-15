@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		3D06356A262878750066CA24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D063569262878750066CA24 /* ContentView.swift */; };
 		3D06356C262878780066CA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D06356B262878780066CA24 /* Assets.xcassets */; };
 		3D06356F262878780066CA24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D06356E262878780066CA24 /* Preview Assets.xcassets */; };
+		3D063579262879450066CA24 /* Dracula in Frameworks */ = {isa = PBXBuildFile; productRef = 3D063578262879450066CA24 /* Dracula */; };
+		3D06357D2628BF490066CA24 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06357C2628BF490066CA24 /* CustomTextField.swift */; };
+		3D0635802628C02D0066CA24 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06357F2628C02D0066CA24 /* CustomSecureField.swift */; };
+		3D0635832628F5B20066CA24 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0635822628F5B20066CA24 /* HeaderView.swift */; };
+		3D0635862628F5E40066CA24 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0635852628F5E40066CA24 /* SignUpView.swift */; };
+		3D0635892628F5FF0066CA24 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0635882628F5FF0066CA24 /* SignInView.swift */; };
+		3D06358C2628FD7B0066CA24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D06358B2628FD7B0066CA24 /* README.md */; };
+		3D06358F2628FE810066CA24 /* abril-text-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D06358E2628FE810066CA24 /* abril-text-bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,13 @@
 		3D06356B262878780066CA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D06356E262878780066CA24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D063570262878780066CA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D06357C2628BF490066CA24 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3D06357F2628C02D0066CA24 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		3D0635822628F5B20066CA24 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3D0635852628F5E40066CA24 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3D0635882628F5FF0066CA24 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3D06358B2628FD7B0066CA24 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3D06358E2628FE810066CA24 /* abril-text-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "abril-text-bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D063579262879450066CA24 /* Dracula in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +52,7 @@
 		3D06355B262878750066CA24 = {
 			isa = PBXGroup;
 			children = (
+				3D06358B2628FD7B0066CA24 /* README.md */,
 				3D063566262878750066CA24 /* DraculaLogin */,
 				3D063565262878750066CA24 /* Products */,
 			);
@@ -52,10 +69,12 @@
 		3D063566262878750066CA24 /* DraculaLogin */ = {
 			isa = PBXGroup;
 			children = (
+				3D06357B2628BF3A0066CA24 /* View */,
 				3D063567262878750066CA24 /* DraculaLoginApp.swift */,
 				3D063569262878750066CA24 /* ContentView.swift */,
 				3D06356B262878780066CA24 /* Assets.xcassets */,
 				3D063570262878780066CA24 /* Info.plist */,
+				3D06358E2628FE810066CA24 /* abril-text-bold.otf */,
 				3D06356D262878780066CA24 /* Preview Content */,
 			);
 			path = DraculaLogin;
@@ -67,6 +86,18 @@
 				3D06356E262878780066CA24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D06357B2628BF3A0066CA24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D06357C2628BF490066CA24 /* CustomTextField.swift */,
+				3D06357F2628C02D0066CA24 /* CustomSecureField.swift */,
+				3D0635822628F5B20066CA24 /* HeaderView.swift */,
+				3D0635852628F5E40066CA24 /* SignUpView.swift */,
+				3D0635882628F5FF0066CA24 /* SignInView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +116,9 @@
 			dependencies = (
 			);
 			name = DraculaLogin;
+			packageProductDependencies = (
+				3D063578262879450066CA24 /* Dracula */,
+			);
 			productName = DraculaLogin;
 			productReference = 3D063564262878750066CA24 /* DraculaLogin.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 3D06355B262878750066CA24;
+			packageReferences = (
+				3D063577262879450066CA24 /* XCRemoteSwiftPackageReference "Dracula" */,
+			);
 			productRefGroup = 3D063565262878750066CA24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D06358F2628FE810066CA24 /* abril-text-bold.otf in Resources */,
+				3D06358C2628FD7B0066CA24 /* README.md in Resources */,
 				3D06356F262878780066CA24 /* Preview Assets.xcassets in Resources */,
 				3D06356C262878780066CA24 /* Assets.xcassets in Resources */,
 			);
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0635832628F5B20066CA24 /* HeaderView.swift in Sources */,
+				3D0635892628F5FF0066CA24 /* SignInView.swift in Sources */,
+				3D0635802628C02D0066CA24 /* CustomSecureField.swift in Sources */,
 				3D06356A262878750066CA24 /* ContentView.swift in Sources */,
 				3D063568262878750066CA24 /* DraculaLoginApp.swift in Sources */,
+				3D0635862628F5E40066CA24 /* SignUpView.swift in Sources */,
+				3D06357D2628BF490066CA24 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D063577262879450066CA24 /* XCRemoteSwiftPackageReference "Dracula" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rphlfc/Dracula.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D063578262879450066CA24 /* Dracula */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D063577262879450066CA24 /* XCRemoteSwiftPackageReference "Dracula" */;
+			productName = Dracula;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D06355C262878750066CA24 /* Project object */;
 }

@@ -5,12 +5,12 @@
 //  Created by Raphael Cerqueira on 15/04/21.
 //
 
+import Dracula
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        SignInView()
     }
 }
 
